@@ -1,0 +1,16 @@
+#root{
+    position: relative;
+    background: url('/assets/bkg.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+#signin-box{
+    width: 400px;
+    height: 400px;
+    height: 100%;
+}
+
+#logo{
+    width: 50px;
+    height: auto;
+}
