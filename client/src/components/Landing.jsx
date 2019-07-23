@@ -4,7 +4,7 @@ import Signin from './Signin';
 export default class Landing extends Component {
     render() {
         return (
-            <div>
+            <div id="landing">
                 <Signin />
             </div>
         )

@@ -47,10 +47,10 @@ app.get('/account', (req,res)=>{
     request.post(authOptions, (err, response, body)=>{
         if(!err){
             const access_token = body.access_token;
-            const redirect_uri = 'http://localhost:3000'
+            const redirect_uri = 'http://localhost:3000/me'
             // console.log(access_token);
-            // res.redirect(redirect_uri+'?access_token='+access_token);
-            res.json({access_token})
+            res.redirect(redirect_uri+'/'+access_token);
+            // res.json({access_token})
         }
     })
 
