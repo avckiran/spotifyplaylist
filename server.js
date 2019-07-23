@@ -2,6 +2,7 @@
 const express = require('express');
 const request = require('request');
 const querystring = require('querystring');
+const path=require('path');
 //internal files/modules
 const config = require('./config/config');
 
@@ -10,6 +11,9 @@ const app = express();
 const client_id = config.spotify_client_id;
 const client_secret = config.spotify_client_secret;
 const redirect_uri = 'http://localhost:5000/account';
+
+//for deployment
+app.use(express.static(path.join(__dirname, "client/build")))
 
 
 //Landing Route
