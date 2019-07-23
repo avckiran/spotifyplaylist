@@ -53,7 +53,7 @@ class User extends Component {
                     {/* To display user info */}
                     {this.state.user ? <div>
                         <p className="lead mb-0">{this.state.user.display_name} </p>
-                        <small className="text-muted">{this.state.user.followers.total} Followers, </small>
+                        <small className="text-muted">{this.state.user.followers.total ? this.state.user.followers.total: 0} Followers, </small>
                         {this.state.playlists ? 
                             <small className="text-muted">{this.state.playlists.length} Playlists</small>
                             : <div></div>
