@@ -15,6 +15,8 @@ const Signin = () => {
                 <div className="my-3">
                     <a href="http://localhost:5000/api/login" className="btn btn-lg btn-outline-success">Login to Spotify</a>
                     {/* <a href="http://localhost:5000/api/login" className="btn btn-lg btn-outline-danger">Login</a> */}
+                    <br/>
+                    <small className="text-muted">You may redirect to Spotify for the login process</small>
                 </div>
             </div>
     )

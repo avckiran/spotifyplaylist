@@ -15,6 +15,7 @@ body{
     position: absolute;
     top: 25vh;
     left: 38vw;
+    border-radius: 5%;
     /* height: 100%; */
 }
 

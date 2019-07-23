@@ -10,10 +10,10 @@ class User extends Component {
 
     componentDidMount(){
         localStorage.setItem('access_token',this.props.location.pathname.substr(4));
-        loadUser(this.state.access_token).then( user =>{
+        loadUser().then( user =>{
             this.setState({...this.state, user })
         })
-        loadPlaylists(this.state.access_token).then(playlists =>{
+        loadPlaylists().then(playlists =>{
             this.setState({...this.state, playlists})
         })
     }
@@ -47,10 +47,10 @@ class User extends Component {
     }
       
     render() {
-        console.log(this.state);
         return (
-            <div id="account" className="p-2 mb-5">
-                <div className="container bg-dark text-white mt-5 p-5">
+            <div id="account" className="p-2 mb-2">
+                <div className="container bg-dark text-white mt-2 p-3">
+                    {/* To display user info */}
                     {this.state.user ? <div>
                         <p className="lead mb-0">{this.state.user.display_name} </p>
                         <small className="text-muted">{this.state.user.followers.total} Followers, </small>
@@ -61,9 +61,10 @@ class User extends Component {
                         </div>
                       : (
                         <div></div>)}
+                    {/* Main Heading */}
                     <h4 className="display-4 text-center">Manage Your Playlists</h4>
                     
-                    {/* <p className="lead mt-5">Your Playlists</p> */}
+                    {/* Columns for playlists and tracks */}
                     <div className="row mt-5 border-top pt-3">
                         <div className="col-md-6 px-3">
                             <div className="text-center lead">Your Playlists</div>
@@ -82,6 +83,7 @@ class User extends Component {
                             :   <div className="spinner-grow text-light" role="status">Loading</div>
                             }
                         </div>
+                        {/* Tracks column */}
                         <div className="col-md-6 px-3">
                             <div className="text-center lead mb-3">Tracks</div>
                             <div id="track-area">
