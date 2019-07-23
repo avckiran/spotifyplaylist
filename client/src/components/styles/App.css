@@ -1,3 +1,8 @@
+body{
+    background:#323940f7;
+    height: 100vh;
+}
+
 #landing{
     position: relative;
     background: url('/assets/bkg.jpg') no-repeat center center/cover;
@@ -15,8 +20,14 @@
     height: auto;
 }
 
-#account{
+/* #account{
     position: relative;
     background:#323940f7;
     height: 100vh;
+} */
+
+#playlists-display:hover{
+    color:#28a745 !important;
+    text-decoration: none;
+
 }

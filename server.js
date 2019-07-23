@@ -23,7 +23,7 @@ app.get('/api/login', (req,res)=>{
     querystring.stringify({
         response_type: 'code',
         client_id,
-        scope: 'user-read-private user-read-email',
+        scope: 'user-read-private user-read-email playlist-modify playlist-modify-private',
         redirect_uri
     }))
 });
