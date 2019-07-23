@@ -19,7 +19,9 @@ class Track extends Component {
                     <div className='my-auto'>
                         { this.props.user_id === this.props.playlist_owner ? 
                         <button className="btn btn-sm btn-outline-dark" onClick={()=> this.props.deleteTrack(this.props.track.id, this.props.playlist_id, this.props.playlist_name, this.props.playlist_owner)}>Delete</button>
-                        : <div></div>}
+                        : <div>
+                            <small className="text-muted"> Can't edit this</small>
+                        </div>}
                     </div>
                     </div>
                 </div>
