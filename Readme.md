@@ -1,7 +1,9 @@
 This project let you read and delete tracks from your playlists. 
 
-Stack: 
+Stack:
+
 Backend : Node JS
+
 Frontend: React JS
 
 This contains both server and client code. 
