@@ -12,6 +12,9 @@ body{
 #signin-box{
     width: 400px;
     height: 400px;
+    position: absolute;
+    top: 25vh;
+    left: 38vw;
     /* height: 100%; */
 }
 
@@ -20,14 +23,44 @@ body{
     height: auto;
 }
 
-/* #account{
-    position: relative;
-    background:#323940f7;
-    height: 100vh;
-} */
+#track-area{
+    height: 600px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+::-webkit-scrollbar-track {
+    /* background:#28a745;  */
+    /* background: #888; */
+    background: black;
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    /* background: #28a745; */
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 #playlists-display:hover{
-    color:#28a745 !important;
+    /* color:#28a745 !important; */
     text-decoration: none;
-
+    background: #4a5d6d;
 }
+
+
+#track-display:hover button{
+    /* display: none; */
+    color:#dc3545;
+    border-color:#dc3545;
+}
+
+
+
