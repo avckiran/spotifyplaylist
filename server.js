@@ -17,7 +17,7 @@ const redirect_uri = 'http://localhost:5000/account';
 
 
 
-Landing Route
+// Landing Route
 app.get('/', (req,res) => {
     res.send("API is running!")
 });
